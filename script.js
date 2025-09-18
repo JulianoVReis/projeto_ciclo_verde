@@ -5,6 +5,7 @@ const comunidade = document.querySelector(".comunidade");
 const educacao = document.querySelector(".educacao");
 const inovacoes = document.querySelector(".inovacoes");
 const contato = document.querySelector(".contato");
+const documentario = document.querySelector(".documentario");
 
 const textoInicial = document.querySelector(".texto-inicial");
 const sustentabilidadeTxt = document.querySelector(".sustentabilidade-txt");
@@ -13,7 +14,7 @@ const comunidadeTxt = document.querySelector(".comunidade-txt");
 const educacaoTxt = document.querySelector(".educacao-txt");
 const inovacoesTxt = document.querySelector(".inovacoes-txt");
 const contatoTxt = document.querySelector(".contato-txt");
-const links = document.querySelectorAll(".efeito-link");
+const documentarioVid = document.querySelector(".documentario-vid");
 
 home.addEventListener("click", () => {
 	textoInicial.style.display = "flex";
@@ -23,6 +24,7 @@ home.addEventListener("click", () => {
 	educacaoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
+	documentarioVid.style.display = 'none'
 });
 
 sustentabilidade.addEventListener("click", () => {
@@ -33,6 +35,7 @@ sustentabilidade.addEventListener("click", () => {
 	educacaoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
+	documentarioVid.style.display = 'none'
 });
 
 reciclagem.addEventListener("click", () => {
@@ -43,6 +46,7 @@ reciclagem.addEventListener("click", () => {
 	educacaoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
+	documentarioVid.style.display = 'none'
 });
 
 comunidade.addEventListener("click", () => {
@@ -53,6 +57,7 @@ comunidade.addEventListener("click", () => {
 	educacaoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
+	documentarioVid.style.display = 'none'
 });
 
 educacao.addEventListener("click", () => {
@@ -63,6 +68,7 @@ educacao.addEventListener("click", () => {
 	sustentabilidadeTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
+	documentarioVid.style.display = 'none'
 });
 
 inovacoes.addEventListener("click", () => {
@@ -73,10 +79,23 @@ inovacoes.addEventListener("click", () => {
 	textoInicial.style.display = "none";
 	sustentabilidadeTxt.style.display = "none";
 	contatoTxt.style.display = "none";
+	documentarioVid.style.display = 'none'
 });
 
 contato.addEventListener("click", () => {
 	contatoTxt.style.display = "flex";
+	inovacoesTxt.style.display = "none";
+	educacaoTxt.style.display = "none";
+	comunidadeTxt.style.display = "none";
+	reciclagemTxt.style.display = "none";
+	textoInicial.style.display = "none";
+	sustentabilidadeTxt.style.display = "none";
+	documentarioVid.style.display = 'none'
+});
+
+documentario.addEventListener("click", () => {
+	documentarioVid.style.display = 'flex'
+	contatoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	educacaoTxt.style.display = "none";
 	comunidadeTxt.style.display = "none";
