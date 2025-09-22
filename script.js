@@ -15,6 +15,7 @@ const educacaoTxt = document.querySelector(".educacao-txt");
 const inovacoesTxt = document.querySelector(".inovacoes-txt");
 const contatoTxt = document.querySelector(".contato-txt");
 const documentarioVid = document.querySelector(".documentario-vid");
+const links = document.querySelectorAll(".efeito-link");
 
 home.addEventListener("click", () => {
 	textoInicial.style.display = "flex";
