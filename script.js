@@ -25,7 +25,7 @@ home.addEventListener("click", () => {
 	educacaoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
-	documentarioVid.style.display = 'none'
+	documentarioVid.style.display = "none";
 });
 
 sustentabilidade.addEventListener("click", () => {
@@ -36,7 +36,7 @@ sustentabilidade.addEventListener("click", () => {
 	educacaoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
-	documentarioVid.style.display = 'none'
+	documentarioVid.style.display = "none";
 });
 
 reciclagem.addEventListener("click", () => {
@@ -47,7 +47,7 @@ reciclagem.addEventListener("click", () => {
 	educacaoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
-	documentarioVid.style.display = 'none'
+	documentarioVid.style.display = "none";
 });
 
 comunidade.addEventListener("click", () => {
@@ -58,7 +58,7 @@ comunidade.addEventListener("click", () => {
 	educacaoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
-	documentarioVid.style.display = 'none'
+	documentarioVid.style.display = "none";
 });
 
 educacao.addEventListener("click", () => {
@@ -69,7 +69,7 @@ educacao.addEventListener("click", () => {
 	sustentabilidadeTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	contatoTxt.style.display = "none";
-	documentarioVid.style.display = 'none'
+	documentarioVid.style.display = "none";
 });
 
 inovacoes.addEventListener("click", () => {
@@ -80,7 +80,7 @@ inovacoes.addEventListener("click", () => {
 	textoInicial.style.display = "none";
 	sustentabilidadeTxt.style.display = "none";
 	contatoTxt.style.display = "none";
-	documentarioVid.style.display = 'none'
+	documentarioVid.style.display = "none";
 });
 
 contato.addEventListener("click", () => {
@@ -91,11 +91,11 @@ contato.addEventListener("click", () => {
 	reciclagemTxt.style.display = "none";
 	textoInicial.style.display = "none";
 	sustentabilidadeTxt.style.display = "none";
-	documentarioVid.style.display = 'none'
+	documentarioVid.style.display = "none";
 });
 
 documentario.addEventListener("click", () => {
-	documentarioVid.style.display = 'flex'
+	documentarioVid.style.display = "flex";
 	contatoTxt.style.display = "none";
 	inovacoesTxt.style.display = "none";
 	educacaoTxt.style.display = "none";

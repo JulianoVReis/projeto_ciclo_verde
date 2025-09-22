@@ -224,10 +224,6 @@ main {
 	color: #32f8f8;
 }
 
-.comunidade-txt div .txt-p {
-	padding-left: 0.4rem;
-}
-
 .comunidade-txt hr {
 	width: 90%;
 	margin: 1rem auto;
@@ -316,7 +312,7 @@ main {
 	padding: 1rem;
 }
 
-.inovacoes-txt h1 span {
+.inovacoes-txt .info1 h1 span {
 	display: inline-block;
 	font-size: 2.5rem;
 	color: #32f8f8;
@@ -420,7 +416,7 @@ main {
 .documentario-vid img {
 	display: block;
 	width: 30rem;
-	border-radius: .3rem;
+	border-radius: 0.3rem;
 }
 
 .documentario-vid p:first-of-type {
@@ -502,6 +498,226 @@ main {
 	animation: slideLeft 3s cubic-bezier(0.22, 0.85, 0.36, 1) forwards;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	main {
+		padding: 0 1rem;
+		overflow: hidden;
+	}
+
+	.sustentabilidade-txt {
+		font-size: 0.9rem;
+	}
+
+	.sustentabilidade-txt div {
+		width: 35rem;
+	}
+
+	.reciclagem-txt {
+		font-size: 0.9rem;
+	}
+
+	.reciclagem-txt h1 span:first-of-type {
+		font-size: 1.5rem;
+	}
+
+	.reciclagem-txt h1 span {
+		font-size: 1.8rem;
+	}
+
+	.reciclagem-txt div {
+		width: 45rem;
+	}
+
+	.reciclagem-txt img {
+		display: none;
+	}
+
+	.comunidade-txt {
+		font-size: 0.8rem;
+	}
+
+	.comunidade-txt div:first-of-type {
+		width: 34rem;
+	}
+
+	.comunidade-txt h1 span {
+		font-size: 2.5rem;
+	}
+
+	.comunidade-txt img {
+		width: 25rem;
+	}
+
+	.educacao-txt {
+		font-size: 0.8rem;
+	}
+
+	.educacao-info {
+		width: 38rem;
+	}
+
+	.educacao-txt h1 {
+		text-align: center;
+	}
+
+	.video iframe {
+		width: 22rem;
+		height: 14rem;
+	}
+
+	.inovacoes-txt {
+		font-size: 0.8rem;
+	}
+
+	.inovacoes-txt .info1 h1 {
+		width: 30rem;
+		font-size: 1.5rem;
+	}
+
+	.inovacoes-txt .info1 h1 span {
+		font-size: 2.3rem;
+	}
+
+	.inovacoes-txt .info1 p {
+		width: 30rem;
+	}
+
+	.inovacoes-txt .info2 {
+		width: 30rem;
+	}
+
+	.inovacoes-txt img {
+		width: 30rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.menu ul {
+		gap: 1rem;
+	}
+
+	main {
+		padding: 0 0.5rem;
+		overflow: hidden;
+	}
+
+	.texto-inicial .p1 {
+		font-size: 3rem;
+	}
+
+	.texto-inicial .p2 {
+		font-size: 2rem;
+	}
+
+	.texto-inicial .p3 {
+		font-size: 5rem;
+	}
+
+	.sustentabilidade-txt {
+		font-size: 0.8rem;
+	}
+
+	.sustentabilidade-txt div {
+		width: 26rem;
+	}
+
+	.sp1 {
+		font-size: 1rem;
+	}
+
+	.sp2 {
+		font-size: 2rem;
+		margin-top: 0.8rem;
+		margin-left: 2rem;
+	}
+
+	.sp3 {
+		font-size: 3rem;
+		margin-left: 4rem;
+	}
+
+	.reciclagem-txt {
+		font-size: 0.8rem;
+	}
+
+	.reciclagem-txt h1 {
+		font-size: 1.5rem;
+	}
+
+	.reciclagem-txt h1 span:first-of-type {
+		font-size: 1rem;
+	}
+
+	.reciclagem-txt img {
+		display: none;
+	}
+
+	.comunidade-txt {
+		font-size: 0.75rem;
+	}
+
+	.comunidade-txt h1 {
+		font-size: 1rem;
+	}
+
+	.comunidade-txt h1 span {
+		font-size: 1.4rem;
+	}
+
+	.comunidade-txt div:first-of-type {
+		width: 31rem;
+	}
+
+	.comunidade-txt img {
+		width: 15rem;
+	}
+
+	.educacao-txt {
+		font-size: 0.8rem;
+	}
+
+	.video iframe {
+		width: 17.5rem;
+		height: 9.5rem;
+	}
+
+	.educacao-txt h1 {
+		font-size: 1.2rem;
+	}
+
+	.educacao-info {
+		width: 29rem;
+	}
+
+	.inovacoes-txt {
+		flex-wrap: wrap;
+		justify-content: center;
+		font-size: 0.8rem;
+	}
+
+	.inovacoes-txt .info1 h1 {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.inovacoes-txt h1 span {
+		font-size: 1.8rem;
+		margin-left: 0;
+	}
+
+	.inovacoes-txt img {
+		display: none;
+	}
+
+	.inovacoes-txt .info1 p {
+		margin-bottom: 0.5rem;
+	}
+
+	.inovacoes-txt h3 {
+		margin-top: 0.5rem;
+	}
+}
+
 @media (max-width: 575.98px) {
 	.menu {
 		height: fit-content;
@@ -512,7 +728,7 @@ main {
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 1rem;
-		padding: .3rem;
+		padding: 0.3rem;
 	}
 
 	.logo {
@@ -525,7 +741,7 @@ main {
 
 	main {
 		justify-content: center;
-		padding: 0 .5rem;
+		padding: 0 0.5rem;
 		overflow: hidden;
 	}
 
@@ -556,21 +772,21 @@ main {
 	}
 
 	.sustentabilidade-txt .txt-p {
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.sustentabilidade-txt div {
-		font-size: .75rem;
-		padding: .5rem;
+		font-size: 0.75rem;
+		padding: 0.5rem;
 	}
 
 	.sustentabilidade-txt h1 {
 		position: absolute;
-		top: .8%;
+		top: 0.8%;
 	}
 
 	.sustentabilidade-txt h2 {
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 
 	.sp1 {
@@ -588,7 +804,7 @@ main {
 
 	.reciclagem-txt {
 		flex-wrap: wrap;
-		font-size: .8rem;
+		font-size: 0.8rem;
 		height: 100%;
 		position: relative;
 	}
@@ -599,18 +815,18 @@ main {
 	}
 
 	.reciclagem-txt .txt-p {
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.reciclagem-txt div {
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.reciclagem-txt h1 {
 		font-size: 1rem;
 		position: absolute;
-		top: .8%;
-		margin-left: .2rem;
+		top: 0.8%;
+		margin-left: 0.2rem;
 	}
 
 	.reciclagem-txt h1 span {
@@ -622,11 +838,11 @@ main {
 	}
 
 	.reciclagem-txt h2 {
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 
 	.reciclagem-txt h3 {
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 
 	.reciclagem-txt img {
@@ -635,25 +851,25 @@ main {
 
 	.comunidade-txt {
 		flex-wrap: wrap;
-		font-size: .8rem;
+		font-size: 0.8rem;
 		height: 100%;
 		position: relative;
 	}
 
 	.comunidade-txt div:first-of-type {
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.comunidade-txt h1 {
-		font-size: .9rem;
+		font-size: 0.9rem;
 		position: absolute;
-		top: .8%;
+		top: 0.8%;
 		left: 7%;
 	}
 
 	.comunidade-txt h1 span {
 		display: inline-block;
-		font-size: .9rem;
+		font-size: 0.9rem;
 	}
 
 	.comunidade-txt hr {
@@ -662,15 +878,15 @@ main {
 	}
 
 	.comunidade-txt .txt-p {
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.comunidade-txt h2 {
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 
 	.comunidade-txt h3 {
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 
 	.comunidade-txt img {
@@ -681,17 +897,17 @@ main {
 		flex-wrap: wrap;
 		justify-content: center;
 		height: 100%;
-		font-size: .8rem;
+		font-size: 0.8rem;
 		position: relative;
 	}
 
 	.educacao-info {
 		width: 100%;
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.educacao-info .txt-p {
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.educacao-txt h1 {
@@ -716,7 +932,7 @@ main {
 
 	.inovacoes-txt {
 		flex-wrap: wrap;
-		font-size: .8rem;
+		font-size: 0.8rem;
 		position: relative;
 	}
 
@@ -732,17 +948,17 @@ main {
 	}
 
 	.inovacoes-txt h2 {
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.inovacoes-txt h3 {
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 
 	.inovacoes-txt .info1 p {
 		width: 100%;
-		padding: .5rem;
-		margin-bottom: .2rem;
+		padding: 0.5rem;
+		margin-bottom: 0.2rem;
 	}
 
 	.inovacoes-txt hr {
@@ -752,7 +968,7 @@ main {
 
 	.inovacoes-txt .info2 {
 		width: 100%;
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 
 	.inovacoes-txt img {
@@ -764,13 +980,13 @@ main {
 	}
 
 	.documentario-vid p:first-of-type {
-		font-size: .8rem;
+		font-size: 0.8rem;
 		width: 100%;
-		padding: .5rem;
-		margin-top: .5rem;
+		padding: 0.5rem;
+		margin-top: 0.5rem;
 	}
 
 	.documentario-vid p:last-of-type {
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 	}
 }
