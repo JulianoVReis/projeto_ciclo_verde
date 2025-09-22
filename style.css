@@ -774,7 +774,7 @@ main {
 	.sustentabilidade-txt div {
 		width: 25.6rem;
 		padding: 0.6rem;
-		margin-top: 8.5rem;
+		margin-top: 9.4rem;
 	}
 
 	.sustentabilidade-txt hr {
@@ -788,19 +788,19 @@ main {
 
 	.sustentabilidade-txt .sp1 {
 		position: absolute;
-		top: 5%;
+		top: 6%;
 		font-size: 1rem;
 	}
 
 	.sustentabilidade-txt .sp2 {
 		position: absolute;
-		top: 5%;
+		top: 6.5%;
 		font-size: 2rem;
 	}
 
 	.sustentabilidade-txt .sp3 {
 		position: absolute;
-		top: 10%;
+		top: 12%;
 		font-size: 3rem;
 	}
 
