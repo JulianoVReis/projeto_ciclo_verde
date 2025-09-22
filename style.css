@@ -683,6 +683,7 @@ main {
 
 	.educacao-txt h1 {
 		font-size: 1.2rem;
+		text-align: center;
 	}
 
 	.educacao-info {
@@ -697,11 +698,10 @@ main {
 
 	.inovacoes-txt .info1 h1 {
 		text-align: center;
-		margin-bottom: 1rem;
 	}
 
-	.inovacoes-txt h1 span {
-		font-size: 1.8rem;
+	.inovacoes-txt .info1 h1 span {
+		font-size: 1.6rem;
 		margin-left: 0;
 	}
 
