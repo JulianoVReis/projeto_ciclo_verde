@@ -9,7 +9,7 @@ body {
 	overflow: hidden;
 }
 
-nav {
+.menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -19,34 +19,33 @@ nav {
 	backdrop-filter: blur(0.05rem);
 	color: #f6f6f6;
 	background-color: #00000056;
-	padding: 0 2rem 0 0.1rem;
+	padding: 0 1rem;
 }
 
-nav .logo {
-	display: block;
-	width: 1.5rem;
-	margin-left: 1rem;
-}
-
-nav .documentario {
-	width: 1.5rem;
-	margin-left: 1rem;
-}
-
-nav ul {
+.menu ul {
 	display: flex;
 	gap: 2rem;
 	list-style: none;
 }
 
-nav ul li {
+.menu ul li {
 	cursor: pointer;
+}
+
+.logo {
+	display: block;
+	width: 1.5rem;
+}
+
+.documentario {
+	width: 1.5rem;
+	margin-left: 1rem;
 }
 
 main {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: left;
 	height: 100vh;
 	padding: 0 3rem;
 }
@@ -65,9 +64,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 100vh;
-	font-weight: 400;
-	overflow: hidden;
+	align-items: flex-start;
+	width: 100%;
 	color: #f6f6f6;
 }
 
@@ -88,8 +86,9 @@ main {
 
 .sustentabilidade-txt {
 	display: none;
+	justify-content: space-between;
 	align-items: center;
-	gap: 5rem;
+	width: 100%;
 	color: #f6f6f6;
 }
 
@@ -131,23 +130,11 @@ main {
 	margin-left: 4rem;
 }
 
-.sustentabilidade-txt .txt-p {
-	margin-left: 0 !important;
-}
-
-.sustentabilidade-txt h2 {
-	margin-top: 0.6rem;
-}
-
-.sustentabilidade-txt p {
-	margin-left: 1rem;
-}
-
 .reciclagem-txt {
 	display: none;
 	justify-content: space-between;
 	align-items: center;
-	gap: 5rem;
+	width: 100%;
 	color: #f6f6f6;
 }
 
@@ -182,10 +169,6 @@ main {
 	margin-bottom: 2.8rem;
 }
 
-.reciclagem-txt div .txt-p {
-	padding-left: 0.7rem;
-}
-
 .reciclagem-txt h2 {
 	text-align: center;
 }
@@ -208,7 +191,6 @@ main {
 	display: none;
 	justify-content: space-between;
 	align-items: center;
-	gap: 7rem;
 	width: 100%;
 	color: #f6f6f6;
 }
@@ -232,7 +214,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	gap: 2rem;
-	width: 40rem;
+	width: fit-content;
 	text-align: center;
 }
 
@@ -321,18 +303,17 @@ main {
 	border-radius: 0.5rem;
 }
 
+.inovacoes-txt .info1 h1 {
+	width: 40rem;
+	margin-bottom: 1rem;
+}
+
 .inovacoes-txt .info2 {
-	width: 50rem;
-	height: fit-content;
+	width: 40rem;
 	border-radius: 0.3rem;
 	backdrop-filter: blur(0.05rem);
 	background-color: #00000083;
 	padding: 1rem;
-}
-
-.inovacoes-txt h1 {
-	margin-left: 4rem;
-	margin-bottom: 1rem;
 }
 
 .inovacoes-txt h1 span {
@@ -362,7 +343,6 @@ main {
 .contato-txt .info {
 	display: flex;
 	flex-direction: column;
-	width: fit-content;
 	border-radius: 0.3rem;
 	backdrop-filter: blur(0.05rem);
 	background-color: #00000083;
@@ -433,10 +413,8 @@ main {
 .documentario-vid {
 	display: none;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100%;
 }
 
 .documentario-vid img {
@@ -524,371 +502,175 @@ main {
 	animation: slideLeft 3s cubic-bezier(0.22, 0.85, 0.36, 1) forwards;
 }
 
-@media screen and (max-width: 991px) {
-	main {
-		padding: 0 1rem;
-		overflow: hidden;
+@media (max-width: 575.98px) {
+	.menu {
+		height: fit-content;
+		padding: 0;
 	}
 
-	nav .logo {
-		width: 1.4rem;
-		margin-left: .5rem;
-	}
-
-	nav ul {
+	.menu ul {
 		flex-wrap: wrap;
+		justify-content: center;
 		gap: 1rem;
+		padding: .3rem;
 	}
 
-	.texto-inicial .p1 {
-		font-size: 3rem;
-	}
-
-	.texto-inicial .p2 {
-		font-size: 2rem;
-	}
-
-	.texto-inicial .p3 {
-		font-size: 5rem;
-	}
-
-	.sustentabilidade-txt {
-		flex-wrap: wrap;
-		font-size: 0.7rem;
-		margin-top: 10rem;
-	}
-
-	.sustentabilidade-txt div {
-		padding: 0.6rem;
-	}
-
-	.sustentabilidade-txt hr {
-		margin: 0.5rem auto;
-	}
-
-	.sustentabilidade-txt .sp1 {
-		position: absolute;
-		top: -21%;
-		font-size: 1rem;
-	}
-
-	.sustentabilidade-txt .sp2 {
-		position: absolute;
-		top: -20%;
-		font-size: 2rem;
-	}
-
-	.sustentabilidade-txt .sp3 {
-		position: absolute;
-		top: -13%;
-		font-size: 3rem;
-	}
-
-	.sustentabilidade-txt p {
-		font-size: 0.8rem;
-	}
-
-	.reciclagem-txt {
-		flex-wrap: wrap;
-		font-size: 0.9rem;
-	}
-
-	.reciclagem-txt h1 {
-		font-size: 1.5rem;
-		position: absolute;
-		top: -11%;
-	}
-
-	.reciclagem-txt h1 span {
-		margin-top: 0;
-	}
-
-	.reciclagem-txt h1 span:first-of-type {
-		font-size: 1.4rem;
-	}
-
-	.reciclagem-txt img {
-		width: 4rem;
-	}
-
-	.reciclagem-txt div {
-		padding: 0.6rem;
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-
-	.reciclagem-txt hr {
-		margin: 0.5rem auto;
-	}
-
-	.reciclagem-txt p {
-		font-size: 0.8rem;
-	}
-
-	.comunidade-txt {
-		flex-wrap: wrap;
-		font-size: 0.9rem;
-	}
-
-	.comunidade-txt div:first-of-type {
-		padding: 0.6rem;
-		margin-top: 7rem;
-	}
-
-	.comunidade-txt h1 {
-		position: absolute;
-		top: 2%;
-		left: 15%;
-	}
-
-	.comunidade-txt hr {
-		margin: 0.5rem auto;
-	}
-
-	.comunidade-txt p {
-		font-size: 0.8rem;
-	}
-
-	.comunidade-txt img {
+	.logo {
 		display: none;
 	}
 
-	.educacao-txt {
-		flex-wrap: wrap;
-		font-size: 0.7rem;
-		margin-top: 10rem;
+	.documentario {
+		margin-left: 3rem;
 	}
 
-	.educacao-txt h1 {
-		position: absolute;
-		top: -62%;
-		left: 15%;
-	}
-
-	.educacao-info {
-		padding: 0.6rem;
-	}
-
-	.educacao-txt hr {
-		margin: 0.5rem auto;
-	}
-
-	.educacao-txt p {
-		font-size: 0.8rem;
-	}
-
-	.educacao-txt .video {
-		position: absolute;
-		top: -52%;
-		left: 28%;
-	}
-
-	.educacao-txt iframe {
-		width: 20rem;
-		height: 11rem;
-	}
-
-	.inovacoes-txt {
+	main {
 		justify-content: center;
-		flex-wrap: wrap;
-		font-size: 0.9rem;
+		padding: 0 .5rem;
+		overflow: hidden;
 	}
 
-	.inovacoes-txt h1 {
-		font-size: 1.5rem;
-		position: absolute;
-		top: -18%;
-		left: 15%;
-	}
-
-	.inovacoes-txt h1 span {
+	.texto-inicial .p1 {
 		font-size: 1.8rem;
 	}
 
-	.inovacoes-txt img {
-		display: none;
-	}
-
-	.inovacoes-txt p {
-		font-size: 0.8rem;
-	}
-
-	.inovacoes-txt hr {
-		margin: 0.5rem auto;
-	}
-
-	.inovacoes-txt .info1 p {
-		margin-bottom: 0.5rem;
-	}
-
-	.inovacoes-txt .info1 p,
-	.inovacoes-txt .info2 {
-		padding: 0.6rem;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	main {
-		padding: 0 0.5rem;
-		overflow: hidden;
-	}
-
-	nav {
-		height: fit-content;
-		padding: .1rem .1rem 0 .1rem;
-	}
-
-	nav .logo {
-		display: none;
-	}
-
-	nav .documentario {
-		width: 1.3rem;
-		margin-left: 10rem;
-	}
-
-	nav ul {
-		gap: 0.4rem .7rem;
-		font-size: 0.9rem;
-		padding: .5rem .5rem 0 .5rem;
-	}
-
-	.texto-inicial .p1 {
-		font-size: 2rem;
-	}
-
 	.texto-inicial .p2 {
 		font-size: 1.5rem;
+		padding-top: 1rem;
 	}
 
 	.texto-inicial .p3 {
 		font-size: 4rem;
+		font-weight: 600;
+		color: #32f8f8;
 	}
 
 	.sustentabilidade-txt {
 		flex-wrap: wrap;
-		font-size: 0.5rem;
-		margin-top: 0;
-	}
-
-	.sustentabilidade-txt div {
-		width: 25.6rem;
-		padding: 0.6rem;
-		margin-top: 9.4rem;
+		height: 100%;
+		position: relative;
 	}
 
 	.sustentabilidade-txt hr {
 		width: 100%;
-		margin: 0.5rem auto;
+		margin: 0;
+	}
+
+	.sustentabilidade-txt .txt-p {
+		padding: .5rem;
+	}
+
+	.sustentabilidade-txt div {
+		font-size: .75rem;
+		padding: .5rem;
 	}
 
 	.sustentabilidade-txt h1 {
-		margin-left: 3rem;
+		position: absolute;
+		top: .8%;
 	}
 
-	.sustentabilidade-txt .sp1 {
-		position: absolute;
-		top: 6%;
+	.sustentabilidade-txt h2 {
+		margin-top: .5rem;
+	}
+
+	.sp1 {
 		font-size: 1rem;
 	}
 
-	.sustentabilidade-txt .sp2 {
-		position: absolute;
-		top: 6.5%;
-		font-size: 2rem;
+	.sp2 {
+		font-size: 1.3rem;
+		margin-top: 0;
 	}
 
-	.sustentabilidade-txt .sp3 {
-		position: absolute;
-		top: 12%;
-		font-size: 3rem;
-	}
-
-	.sustentabilidade-txt p {
-		font-size: 0.8rem;
+	.sp3 {
+		font-size: 1.8rem;
 	}
 
 	.reciclagem-txt {
 		flex-wrap: wrap;
-		font-size: 0.7rem;
-	}
-
-	.reciclagem-txt h1 {
-		font-size: 1.5rem;
-		position: absolute;
-		top: -10.4%;
-	}
-
-	.reciclagem-txt h1 span {
-		margin-top: 0;
-	}
-
-	.reciclagem-txt h1 span:first-of-type {
-		font-size: 1.4rem;
-	}
-
-	.reciclagem-txt img {
-		display: none;
-		width: 4rem;
-	}
-
-	.reciclagem-txt div {
-		width: 25.6rem;
-		padding: 0.6rem;
-		margin-top: 0.5rem;
-		margin-bottom: 1rem;
+		font-size: .8rem;
+		height: 100%;
+		position: relative;
 	}
 
 	.reciclagem-txt hr {
 		width: 100%;
-		margin: 0.5rem auto;
+		margin: 0;
+	}
+
+	.reciclagem-txt .txt-p {
+		padding: .5rem;
+	}
+
+	.reciclagem-txt div {
+		padding: .5rem;
+	}
+
+	.reciclagem-txt h1 {
+		font-size: 1rem;
+		position: absolute;
+		top: .8%;
+		margin-left: .2rem;
+	}
+
+	.reciclagem-txt h1 span {
+		display: inline-block;
+	}
+
+	.reciclagem-txt h1 span:first-of-type {
+		font-size: 1rem;
+	}
+
+	.reciclagem-txt h2 {
+		margin-top: .5rem;
 	}
 
 	.reciclagem-txt h3 {
-		margin-top: 0.5rem;
+		margin-top: .5rem;
 	}
 
-	.reciclagem-txt p {
-		font-size: 0.8rem;
+	.reciclagem-txt img {
+		display: none;
 	}
 
 	.comunidade-txt {
 		flex-wrap: wrap;
-		font-size: 0.7rem;
+		font-size: .8rem;
+		height: 100%;
+		position: relative;
 	}
 
 	.comunidade-txt div:first-of-type {
-		padding: 0.6rem;
-		margin-top: 7rem;
+		padding: .5rem;
 	}
 
 	.comunidade-txt h1 {
-		display: block;
-		font-size: 1.5rem;
+		font-size: .9rem;
 		position: absolute;
-		top: 5.9%;
+		top: .8%;
 		left: 7%;
 	}
 
 	.comunidade-txt h1 span {
-		font-size: 2rem;
-	}
-
-	.comunidade-txt div h2 {
-		font-size: 0.9rem;
-	}
-
-	.comunidade-txt h3 {
-		margin-top: 0.8rem;
+		display: inline-block;
+		font-size: .9rem;
 	}
 
 	.comunidade-txt hr {
 		width: 100%;
-		margin: 0.5rem auto;
+		margin: 0;
 	}
 
-	.comunidade-txt p {
-		font-size: 0.8rem;
+	.comunidade-txt .txt-p {
+		padding: .5rem;
+	}
+
+	.comunidade-txt h2 {
+		margin-top: .5rem;
+	}
+
+	.comunidade-txt h3 {
+		margin-top: .5rem;
 	}
 
 	.comunidade-txt img {
@@ -897,98 +679,98 @@ main {
 
 	.educacao-txt {
 		flex-wrap: wrap;
-		font-size: 0.7rem;
-		margin-top: 10rem;
-	}
-
-	.educacao-txt h1 {
-		position: absolute;
-		top: -62%;
-		left: 15%;
+		justify-content: center;
+		height: 100%;
+		font-size: .8rem;
+		position: relative;
 	}
 
 	.educacao-info {
-		width: 25.6rem;
-		font-size: 0.5rem;
-		padding: 0.6rem;
-		margin-bottom: 7rem;
+		width: 100%;
+		padding: .5rem;
+	}
+
+	.educacao-info .txt-p {
+		padding: .5rem;
+	}
+
+	.educacao-txt h1 {
+		text-align: center;
+		position: absolute;
+		top: 2%;
+		margin-bottom: 0;
+	}
+
+	.educacao-txt h2 {
+		margin-top: 0.5rem;
 	}
 
 	.educacao-txt hr {
 		width: 100%;
-		margin: 0.5rem auto;
+		margin: 0;
 	}
 
-	.educacao-txt p {
-		font-size: 0.8rem;
-	}
-
-	.educacao-txt .video {
-		position: absolute;
-		top: -20.7%;
-		left: 28%;
-	}
-
-	.educacao-txt iframe {
-		width: 11rem;
-		height: 7rem;
+	.video {
+		display: none;
 	}
 
 	.inovacoes-txt {
-		justify-content: center;
 		flex-wrap: wrap;
-		font-size: 0.7rem;
+		font-size: .8rem;
+		position: relative;
 	}
 
 	.inovacoes-txt h1 {
-		display: block;
-		font-size: 1.5rem;
 		position: absolute;
-		top: -15%;
-		left: -14.5%;
-	}
-
-	.inovacoes-txt h3 {
-		margin-top: 0.7rem;
+		top: -18.5%;
+		z-index: 1;
+		margin-bottom: 0;
 	}
 
 	.inovacoes-txt h1 span {
-		font-size: 1.8rem;
+		margin-left: 2rem;
+	}
+
+	.inovacoes-txt h2 {
+		padding: .5rem;
+	}
+
+	.inovacoes-txt h3 {
+		margin-top: .5rem;
+	}
+
+	.inovacoes-txt .info1 p {
+		width: 100%;
+		padding: .5rem;
+		margin-bottom: .2rem;
+	}
+
+	.inovacoes-txt hr {
+		width: 100%;
+		margin: 0;
+	}
+
+	.inovacoes-txt .info2 {
+		width: 100%;
+		padding: .5rem;
 	}
 
 	.inovacoes-txt img {
 		display: none;
 	}
 
-	.inovacoes-txt p {
-		font-size: 0.8rem;
-	}
-
-	.inovacoes-txt hr {
-		margin: 0.5rem auto;
-	}
-
-	.inovacoes-txt .info1 p {
-		width: 25.5rem;
-		margin-bottom: 0.5rem;
-	}
-
-	.inovacoes-txt .info1 p,
-	.inovacoes-txt .info2 {
-		padding: 0.6rem;
-	}
-
 	.documentario-vid img {
-		width: 25.6rem;
+		width: 100%;
 	}
 
 	.documentario-vid p:first-of-type {
-		width: 25.6rem;
 		font-size: .8rem;
-		padding: .6rem .6rem .6rem .9rem;
+		width: 100%;
+		padding: .5rem;
+		margin-top: .5rem;
 	}
 
 	.documentario-vid p:last-of-type {
-		font-size: .9rem;
+		margin-top: .5rem;
 	}
 }
