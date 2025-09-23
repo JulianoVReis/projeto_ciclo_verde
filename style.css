@@ -44,7 +44,7 @@ body {
 
 main {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	height: 100vh;
 	padding: 0 3rem;
@@ -86,7 +86,7 @@ main {
 
 .sustentabilidade-txt {
 	display: none;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
 	color: #f6f6f6;
@@ -130,9 +130,13 @@ main {
 	margin-left: 4rem;
 }
 
+.sustentabilidade-txt h2 {
+	margin-top: .5rem;
+}
+
 .reciclagem-txt {
 	display: none;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
 	color: #f6f6f6;
@@ -189,7 +193,7 @@ main {
 
 .comunidade-txt {
 	display: none;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
 	color: #f6f6f6;
@@ -239,7 +243,7 @@ main {
 
 .educacao-txt {
 	display: none;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
 	color: #f6f6f6;
@@ -273,7 +277,7 @@ main {
 
 .inovacoes-txt {
 	display: none;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
 	color: #f6f6f6;
@@ -496,6 +500,51 @@ main {
 
 .slide-left {
 	animation: slideLeft 3s cubic-bezier(0.22, 0.85, 0.36, 1) forwards;
+}
+
+@media (min-width: 1400px) {
+	.sustentabilidade-txt {
+		font-size: .9rem;
+	}
+
+	.reciclagem-txt {
+		font-size: .9rem;
+	}
+
+	.reciclagem-txt h3 {
+		margin-top: .5rem;
+	}
+
+	.comunidade-txt {
+		font-size: .9rem;
+	}
+
+	.educacao-txt {
+		font-size: .9rem;
+	}
+
+	.educacao-txt h1 {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.inovacoes-txt .info1 h1 {
+		font-size: 1.5rem;
+	}
+
+	.inovacoes-txt .info1 h1 span {
+		font-size: 2.1rem;
+		margin-left: 13rem;
+	}
+
+	.inovacoes-txt .info1 p {
+		width: 33rem;
+		margin-bottom: .5rem;
+	}
+
+	.inovacoes-txt img {
+		width: 33rem;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -943,7 +992,7 @@ main {
 		margin-bottom: 0;
 	}
 
-	.inovacoes-txt h1 span {
+	.inovacoes-txt .info1 h1 span {
 		margin-left: 2rem;
 	}
 
