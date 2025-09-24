@@ -337,6 +337,7 @@ main {
 	align-items: flex-start;
 	height: 100%;
 	width: 100%;
+	position: relative;
 	color: #f6f6f6;
 }
 
@@ -597,10 +598,6 @@ main {
 
 	.inovacoes-txt img {
 		width: 33rem;
-	}
-
-	.formulario {
-		left: 40%;
 	}
 }
 
