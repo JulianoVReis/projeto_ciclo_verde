@@ -21,6 +21,7 @@ Projeto acadêmico voltado para **sustentabilidade, reciclagem e conscientizaç�
 - **Background em vídeo** na tela inicial  
 - Efeitos de **animação com CSS**  
 - Conteúdo educativo dividido em: Sustentabilidade, Reciclagem, Comunidade, Educação, Inovações e Contato  
+- **Formulário de contato** para envio de mensagens diretamente pelo site  
 
 ## Contato
 **projetocicloverde2025@gmail.com**  

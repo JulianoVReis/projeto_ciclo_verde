@@ -111,3 +111,33 @@ links.forEach((link) => {
 		link.classList.add("ativo");
 	});
 });
+
+function enviado(e) {
+	e.preventDefault();
+	const form = e.target;
+	const msg = document.getElementById("msg");
+
+	fetch("/", {
+		method: "POST",
+		body: new FormData(form),
+	})
+		.then(() => {
+			msg.style.display = "inline-block";
+			msg.style.color = "#32f8f8";
+			msg.innerText = "Mensagem enviada!";
+			form.reset();
+
+			setTimeout(() => {
+				msg.style.display = "none";
+			}, 3000);
+		})
+		.catch(() => {
+			msg.style.display = "inline-block";
+			msg.style.color = "#721c24";
+			msg.innerText = "Erro ao enviar.";
+
+			setTimeout(() => {
+				msg.style.display = "none";
+			}, 3000);
+		});
+}

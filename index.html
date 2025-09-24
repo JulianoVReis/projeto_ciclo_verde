@@ -209,6 +209,24 @@
 					</div>
 					<p class="obs">Este projeto foi desenvolvido com intuito acadêmico</p>
 				</div>
+
+				<div class="formulario">
+					<hr />
+					<p>Queremos saber sua opinião! Deixe sua mensagem contando o que você está achando do projeto Ciclo Verde. Sua participação é muito importante para nós.</p>
+					<hr />
+					<form name="contato" method="POST" data-netlify="true" onsubmit="enviado(event)">
+						<label for="nome">Nome:</label><br />
+						<input type="text" id="nome" name="nome" maxlength="50" placeholder="seu nome" required oninvalid="this.setCustomValidity('Por favor, preencha o nome')" 
+    				oninput="this.setCustomValidity('')" /><br /><br />
+
+						<label for="mensagem">Mensagem:</label><br />
+						<textarea id="mensagem" name="mensagem" maxlength="500" placeholder="sua mensagem" required oninvalid="this.setCustomValidity('Por favor, escreva uma mensagem')" 
+    				oninput="this.setCustomValidity('')"></textarea><br /><br />
+
+						<button type="submit">Enviar</button>
+						<div id="msg"></div>
+					</form>
+				</div>
 			</div>
 
 			<div class="documentario-vid">
